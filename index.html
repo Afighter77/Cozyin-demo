@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>COZYIN — Style, Your Way</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--ink:#171717;--muted:#77716d;--bg:#faf8f5;--line:#e7e0da;--accent:#8b5e4a}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:DM Sans,sans-serif;background:var(--bg);color:var(--ink)}a{text-decoration:none;color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+.top{text-align:center;padding:9px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:2px}
+header{position:sticky;top:0;z-index:5;background:#faf8f5ee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between}.logo{font:700 28px 'Playfair Display';letter-spacing:3px}.links{display:flex;gap:28px;font-size:13px;font-weight:700}.links a:hover{color:var(--accent)}
+.btn{display:inline-block;border:1px solid var(--ink);padding:13px 20px;font-size:13px;font-weight:700}.dark{background:var(--ink);color:#fff}
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:650px;gap:24px;padding:28px 0 80px}.copy{display:flex;justify-content:center;flex-direction:column;padding:45px 6%}.eyebrow{text-transform:uppercase;letter-spacing:3px;color:var(--accent);font-size:11px;font-weight:700;margin-bottom:16px}
+h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.05}h1{font-size:clamp(52px,7vw,88px)}.copy p{color:var(--muted);max-width:470px;line-height:1.8;margin:24px 0 30px}.heroimg{min-height:590px;background:url('https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=1200&q=85') center/cover}
+section{padding:88px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}.head h2{font-size:48px}.head p{max-width:430px;color:var(--muted);line-height:1.7}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.cat{height:350px;background-size:cover;background-position:center;display:flex;align-items:end;position:relative;overflow:hidden}.cat:after{content:'';position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#0009)}.cat span{position:relative;z-index:1;color:white;font:26px 'Playfair Display';padding:24px}
+.feature{background:#eee8e2;padding:62px 7%;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.feature h2{font-size:52px}.feature p{color:#666;line-height:1.8;margin:18px 0 25px}.featureimg{height:430px;background:url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1000&q=85') center/cover}
+.looks{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.look{background:#fff;border:1px solid var(--line)}.lookimg{height:390px;background-size:cover;background-position:center}.lookbody{padding:18px}.lookbody h3{font-size:22px}.lookbody p{font-size:13px;color:var(--muted);margin-top:5px}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{background:#fff;border:1px solid var(--line);padding:34px}.card h3{font-size:28px;margin-bottom:12px}.card p{color:var(--muted);line-height:1.8}.cta{text-align:center}.cta h2{font-size:54px}.cta p{color:var(--muted);margin:15px 0 25px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between}
+@media(max-width:800px){.links{display:none}.hero{grid-template-columns:1fr}.heroimg{min-height:420px}.cats{grid-template-columns:1fr 1fr}.feature,.info{grid-template-columns:1fr}.looks{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.cats,.looks{grid-template-columns:1fr}.head{display:block}.head h2{font-size:38px;margin-bottom:12px}.feature h2,.cta h2{font-size:40px}.foot{display:block}.foot span{display:block;margin-top:8px}}
+</style>
+</head>
+<body>
+<div class="top">NEW SEASON • CURATED STYLE • RANNI</div>
+<header><div class="wrap"><nav>
+<a class="logo" href="#">COZYIN</a><div class="links"><a href="#collections">Collections</a><a href="#looks">New Arrivals</a><a href="#visit">Visit</a><a href="#contact">Contact</a></div><a class="btn dark" href="#contact">Enquire</a>
+</nav></div></header>
+<main>
+<section class="wrap hero"><div class="copy"><div class="eyebrow">Style, your way</div><h1>Feel good.<br>Look <i>great.</i></h1><p>A modern fashion-store experience designed to make discovering your next favourite look simple, inspiring and personal.</p><div><a class="btn dark" href="#collections">Explore collections</a></div></div><div class="heroimg"></div></section>
+<section id="collections"><div class="wrap"><div class="head"><div><div class="eyebrow">Shop by style</div><h2>Find your look.</h2></div><p>Demo categories — real collections, photos and current stock can be added after the store approves the design.</p></div>
+<div class="cats">
+<a class="cat" style="background-image:url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85')" href="#looks"><span>Women</span></a>
+<a class="cat" style="background-image:url('https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=900&q=85')" href="#looks"><span>Men</span></a>
+<a class="cat" style="background-image:url('https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=900&q=85')" href="#looks"><span>Kids</span></a>
+<a class="cat" style="background-image:url('https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=85')" href="#looks"><span>Accessories</span></a>
+</div></div></section>
+<section><div class="wrap"><div class="feature"><div><div class="eyebrow">Always changing</div><h2>New looks.<br>New mood.</h2><p>The site can highlight selected new arrivals while WhatsApp or Instagram handles the constantly changing stock.</p><a class="btn dark" href="#contact">Ask about latest styles</a></div><div class="featureimg"></div></div></div></section>
+<section id="looks"><div class="wrap"><div class="head"><div><div class="eyebrow">Latest edit</div><h2>Featured looks.</h2></div><p>Sample products only. Replace these with COZYIN's real current collection after approval.</p></div>
+<div class="looks">
+<div class="look"><div class="lookimg" style="background-image:url('https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800&q=85')"></div><div class="lookbody"><h3>Everyday Edit</h3><p>Comfort-first style • Demo collection</p></div></div>
+<div class="look"><div class="lookimg" style="background-image:url('https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=800&q=85')"></div><div class="lookbody"><h3>Weekend Look</h3><p>Easy, modern outfits • Demo collection</p></div></div>
+<div class="look"><div class="lookimg" style="background-image:url('https://images.unsplash.com/photo-1506629905607-d9e0a7f6d0e9?auto=format&fit=crop&w=800&q=85')"></div><div class="lookbody"><h3>Occasion Edit</h3><p>Statement styles • Demo collection</p></div></div>
+</div></div></section>
+<section id="visit"><div class="wrap"><div class="head"><div><div class="eyebrow">Come visit</div><h2>Find COZYIN.</h2></div><p>Only basic public listing details are used here; confirm all business information before publishing.</p></div>
+<div class="info"><div class="card"><h3>Store</h3><p>Angadi, Ranni, Kerala<br>689674</p><a class="btn dark" style="margin-top:22px" href="https://maps.google.com/?q=Cozyin+Ranni" target="_blank">Get directions</a></div>
+<div class="card" id="contact"><h3>Let's connect.</h3><p>For current collections, sizes and availability, customers can contact the store directly.</p><a class="btn" style="margin-top:22px" href="tel:+919605543633">Call the store</a></div></div></div></section>
+<section class="cta"><div class="wrap"><div class="eyebrow">Your style starts here</div><h2>Discover something new.</h2><p>Curated fashion, fresh arrivals and pieces made for your everyday.</p><a class="btn dark" href="#contact">Contact COZYIN</a></div></section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 COZYIN • Demo website</span><span>Website designed & developed by Afighter</span></div></footer>
+</body></html>
